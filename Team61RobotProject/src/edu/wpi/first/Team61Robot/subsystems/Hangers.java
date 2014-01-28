@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
  *
- * @author akari
+ * @author Trevor
  */
 public class Hangers extends Subsystem {
     // Put methods for controlling this subsystem
