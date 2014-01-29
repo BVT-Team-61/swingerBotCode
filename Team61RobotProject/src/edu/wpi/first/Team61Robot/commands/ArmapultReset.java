@@ -1,20 +1,21 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package edu.wpi.first.Team61Robot.commands;
 
 /**
  *
- * @author Frank 
+ * @author Richard
  */
-public class DriveWithJoysticks extends CommandBase {
-        
-    public DriveWithJoysticks() {
+public class ArmapultReset extends CommandBase {
+    
+    public ArmapultReset() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-        requires(drivetrain);
-        // System.out.println("Class name is [" + this.getClass().getName() + "]");
+        requires(armapult);
+        setTimeout(0.02);
     }
 
     // Called just before this Command runs the first time
@@ -23,21 +24,17 @@ public class DriveWithJoysticks extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-          if (oi.weAreReversing()){
-              drivetrain.reverseTankDrive(oi.getLeftSpeed()*-1.0,oi.getRightSpeed());
-          }
-           else
-          {
-              drivetrain.tankDrive(oi.getLeftSpeed(),oi.getRightSpeed());
-          }
+        armapult.setIn(true);
     }
+
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return isTimedOut();
     }
 
     // Called once after isFinished returns true
     protected void end() {
+       armapult.setIn(false);
     }
 
     // Called when another command which requires one or more of the same
