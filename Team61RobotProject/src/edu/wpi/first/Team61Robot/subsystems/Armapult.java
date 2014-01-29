@@ -36,8 +36,14 @@ public class Armapult extends Subsystem {
         }
     }
     
-    public void Shoot() {
-        armapultOut.set(false);
-        armapultIn.set(true);
+    public void setIn(boolean on) {
+        armapultIn.set(on);
+    }
+    
+    public void setOut(boolean on) {
+        armapultOut.set(on);
+    }
+    
+    public void doNothing() {
     }
 }

@@ -14,7 +14,7 @@ public class ArmapultBack extends CommandBase {
     public ArmapultBack() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-        requires(hangers);
+        requires(armapult);
         setTimeout(0.02);
     }
 

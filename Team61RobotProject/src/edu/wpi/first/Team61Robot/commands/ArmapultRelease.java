@@ -14,7 +14,7 @@ public class ArmapultRelease extends CommandBase {
     public ArmapultRelease() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-        requires(hangers);
+        requires(armapult);
         setTimeout(0.02);
     }
 
@@ -24,7 +24,7 @@ public class ArmapultRelease extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        hangers.moveIn(true);
+        armapult.setIn(true);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -34,7 +34,7 @@ public class ArmapultRelease extends CommandBase {
 
     // Called once after isFinished returns true
     protected void end() {
-        hangers.moveIn(false);
+        armapult.setIn(false);
     }
 
     // Called when another command which requires one or more of the same

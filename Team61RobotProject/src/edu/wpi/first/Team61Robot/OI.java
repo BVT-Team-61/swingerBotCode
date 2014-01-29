@@ -1,10 +1,6 @@
 
 package edu.wpi.first.Team61Robot;
 
-import edu.wpi.first.Team61Robot.commands.DumperIn;
-import edu.wpi.first.Team61Robot.commands.DumperOut;
-import edu.wpi.first.Team61Robot.commands.HangerIn;
-import edu.wpi.first.Team61Robot.commands.HangerOut;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmlevate;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
 
@@ -74,16 +70,6 @@ public class OI {
       
       driveButton.whenPressed (new ShiftToArmapult());
       climbButton.whenPressed (new ShiftToArmlevate());
-      hangerOut.whenPressed(new HangerOut());
-      hangerIn.whenPressed(new HangerIn());
-      dumperIn.whenPressed(new DumperIn());
-      dumperOut.whenPressed(new DumperOut());
-      
-      
-      
-        
-      
-
     }
     /**
      *  Check drive and climb buttons to see if they are current;y pressed

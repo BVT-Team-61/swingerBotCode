@@ -14,6 +14,7 @@ public class ArmapultDoNothing extends CommandBase {
     public ArmapultDoNothing() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+        requires(armapult);
     }
 
     // Called just before this Command runs the first time
@@ -22,7 +23,7 @@ public class ArmapultDoNothing extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        hangers.doNothing();
+        armapult.doNothing();
     }
 
     // Make this return true when this Command no longer needs to run execute()
