@@ -8,22 +8,25 @@ package edu.wpi.first.Team61Robot.commands;
  *
  * @author Jack Cone
  */
-public class ShiftToDrive extends CommandBase {
+public class ShiftToArmlevate extends CommandBase {
     
-    public ShiftToDrive() {
+    public ShiftToArmlevate() {
         // Use requires() here to declare subsystem dependencies
-         requires(shifter);
-         setTimeout(0.2);
+        requires(shifter);
+        setTimeout(0.2);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    
+    
+    
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     
-    shifter.shiftToDriveOn();
+        shifter.shiftToClimbOn();
     
     }
 
@@ -32,9 +35,9 @@ public class ShiftToDrive extends CommandBase {
         return isTimedOut();
     }
 
-    // Called once aftisTimedOut()er isFinished returns true
+    // Called once after isFinished returns true
     protected void end() {
-        shifter.shiftToDriveOff();
+        shifter.shiftToClimbOff();
     }
 
     // Called when another command which requires one or more of the same

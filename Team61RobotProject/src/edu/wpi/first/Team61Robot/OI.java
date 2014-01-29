@@ -5,8 +5,8 @@ import edu.wpi.first.Team61Robot.commands.DumperIn;
 import edu.wpi.first.Team61Robot.commands.DumperOut;
 import edu.wpi.first.Team61Robot.commands.HangerIn;
 import edu.wpi.first.Team61Robot.commands.HangerOut;
-import edu.wpi.first.Team61Robot.commands.ShiftToClimb;
-import edu.wpi.first.Team61Robot.commands.ShiftToDrive;
+import edu.wpi.first.Team61Robot.commands.ShiftToArmlevate;
+import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
 
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -72,8 +72,8 @@ public class OI {
         
         
       
-      driveButton.whenPressed (new ShiftToDrive());
-      climbButton.whenPressed (new ShiftToClimb());
+      driveButton.whenPressed (new ShiftToArmapult());
+      climbButton.whenPressed (new ShiftToArmlevate());
       hangerOut.whenPressed(new HangerOut());
       hangerIn.whenPressed(new HangerIn());
       dumperIn.whenPressed(new DumperIn());

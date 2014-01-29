@@ -5,7 +5,7 @@
 package edu.wpi.first.Team61Robot.subsystems;
 
 import edu.wpi.first.Team61Robot.RobotMap;
-import edu.wpi.first.Team61Robot.commands.ShiftToDrive;
+import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
 import edu.wpi.first.Team61Robot.commands.ShifterDoNothing;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;

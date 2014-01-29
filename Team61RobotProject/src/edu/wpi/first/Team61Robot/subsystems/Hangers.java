@@ -31,7 +31,7 @@ public class Hangers extends Subsystem {
     }
     
     public void moveOut(boolean on) {
-        armapultRelease.set(on);
+        armapultReset.set(on);
     }
     
     public void moveIn(boolean on) {

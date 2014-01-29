@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.Team61Robot.commands.CommandBase;
-import edu.wpi.first.Team61Robot.commands.ShiftToDrive;
+import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
 import edu.wpi.first.wpilibj.Compressor;
 
 /**
@@ -63,7 +63,7 @@ public class Team61Robot extends IterativeRobot {
         System.out.println("+-------------------------------------------+");
 
         autonomousCommand = new AutonomousGroup();
-      Command shiftToDriveCommand= new ShiftToDrive();
+      Command shiftToDriveCommand= new ShiftToArmapult();
       
       shiftToDriveCommand.start();
       shiftToDriveCommand.cancel();
