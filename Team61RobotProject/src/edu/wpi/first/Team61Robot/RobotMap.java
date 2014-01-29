@@ -23,8 +23,8 @@ public class RobotMap {
     // Digital outputs
     public static final int hangerOutSolenoid = 1;
     public static final int hangerInSolenoid = 2;
-    public static final int armapultInSolenlid= 7; 
-    public static final int armapultOutSolenlid= 8; 
+    public static final int armapultInSolenoid= 7; 
+    public static final int armapultOutSolenoid= 8; 
     
     public static final int driveSolenoid = 5;
     public static final int armSolenoid = 6;

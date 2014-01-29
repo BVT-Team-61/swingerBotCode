@@ -5,6 +5,10 @@
  */
 package edu.wpi.first.Team61Robot.subsystems;
 
+import edu.wpi.first.Team61Robot.RobotMap;
+import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.SpeedController;
+import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -15,8 +19,25 @@ public class Armapult extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
+    private SpeedController armapultMotor = new Victor(RobotMap.armapultMotor);
+    
+    private Solenoid armapultOut = new Solenoid(RobotMap.armapultOutSolenoid);
+    private Solenoid armapultIn = new Solenoid(RobotMap.armapultInSolenoid);
+
+    
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public void Prepare(double pos) {
+        if (pos < 0.0) {
+            armapultMotor.set(pos);
+        }
+    }
+    
+    public void Shoot() {
+        armapultOut.set(false);
+        armapultIn.set(true);
     }
 }
