@@ -23,10 +23,10 @@ public class OI {
     Joystick jRight = new Joystick(2);   
     Joystick jThree = new Joystick(3);
     Joystick jFour = new Joystick(4);
-   Button driveButton = new JoystickButton(jLeft, 1);
-   Button climbButton = new JoystickButton(jRight, 1);
-   Button hangerOut = new JoystickButton(jThree, 1);
-   Button hangerIn = new JoystickButton(jFour, 1);
+   Button driveButton = new JoystickButton(jFour, 1);
+   Button climbButton = new JoystickButton(jFour, 2);
+   Button hangerOut = new JoystickButton(jLeft, 1);
+   Button hangerIn = new JoystickButton(jLeft, 2);
    Button forwardButton = new JoystickButton (jRight,2);
    Button reverseButton = new JoystickButton (jRight,3);
    Button dumperOut= new JoystickButton (jLeft,6);
