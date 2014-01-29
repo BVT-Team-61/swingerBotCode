@@ -11,8 +11,8 @@ public class RobotMap {
     // following variables to use with your drivetrain subsystem.
     public static final int leftMotor = 1;
     public static final int rightMotor = 2;
-    public static final int armMotor = 3;
-    public static final int armapultMotor = 4;
+    public static final int armMotor = 4;
+    public static final int armapultMotor = 3;
     
     
     // If you are using multiple modules, make sure to define both the port
@@ -21,13 +21,15 @@ public class RobotMap {
     // public static final int rangefinderModule = 1;
     
     // Digital outputs
-    public static final int hangerOutSolenoid = 1;
-    public static final int hangerInSolenoid = 2;
+    public static final int driveSolenoid = 1;
+    public static final int armSolenoid = 2;
+    
+    public static final int hangerOutSolenoid = 5;
+    public static final int hangerInSolenoid = 6;
     public static final int armapultInSolenoid= 7; 
     public static final int armapultOutSolenoid= 8; 
     
-    public static final int driveSolenoid = 5;
-    public static final int armSolenoid = 6;
+
             
     // Digital inputs
     public static final int bottomLimitChannel = 3;
