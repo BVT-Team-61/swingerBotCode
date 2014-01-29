@@ -17,13 +17,13 @@ public class Hangers extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     
-    private Solenoid hangerOut = new Solenoid(RobotMap.hangerOutSolenoid);
-    private Solenoid hangerIn = new Solenoid(RobotMap.hangerInSolenoid);
+    private Solenoid launcherReturn = new Solenoid(RobotMap.armapultOutSolenoid);
+    private Solenoid launcherShoot = new Solenoid(RobotMap.armapultInSolenoid);
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-        setDefaultCommand(new HangerDoNothing());
+        setDefaultCommand(new armapultDoNothing());
     }
     
     public void doNothing() {
@@ -31,10 +31,10 @@ public class Hangers extends Subsystem {
     }
     
     public void moveOut(boolean on) {
-        hangerOut.set(on);
+        armapultRelease.set(on);
     }
     
     public void moveIn(boolean on) {
-        hangerIn.set(on);
+        armapultRelease.set(on);
     }
 }

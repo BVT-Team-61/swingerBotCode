@@ -12,6 +12,7 @@ public class RobotMap {
     public static final int leftMotor = 1;
     public static final int rightMotor = 2;
     public static final int armMotor = 3;
+    public static final int armapultMotor = 4;
     
     
     // If you are using multiple modules, make sure to define both the port
@@ -22,8 +23,8 @@ public class RobotMap {
     // Digital outputs
     public static final int hangerOutSolenoid = 1;
     public static final int hangerInSolenoid = 2;
-    public static final int dumperInSolenlid= 7; 
-    public static final int dumperOutSolenlid= 8; 
+    public static final int armapultInSolenlid= 7; 
+    public static final int armapultOutSolenlid= 8; 
     
     public static final int driveSolenoid = 5;
     public static final int armSolenoid = 6;
