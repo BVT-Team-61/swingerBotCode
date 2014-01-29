@@ -1,6 +1,7 @@
 
 package edu.wpi.first.Team61Robot;
 
+import edu.wpi.first.Team61Robot.commands.ArmapultRelease;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmlevate;
 import edu.wpi.first.Team61Robot.commands.ShiftToArmapult;
 
@@ -70,6 +71,7 @@ public class OI {
       
       driveButton.whenPressed (new ShiftToArmapult());
       climbButton.whenPressed (new ShiftToArmlevate());
+      hangerOut.whenPressed(new ArmapultRelease());
     }
     /**
      *  Check drive and climb buttons to see if they are current;y pressed
