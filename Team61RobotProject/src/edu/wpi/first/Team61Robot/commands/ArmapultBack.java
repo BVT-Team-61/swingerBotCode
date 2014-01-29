@@ -5,11 +5,16 @@
  */
 package edu.wpi.first.Team61Robot.commands;
 
+import edu.wpi.first.Team61Robot.RobotMap;
+import edu.wpi.first.wpilibj.DigitalInput;
+
 /**
  *
  * @author Trevor
  */
 public class ArmapultBack extends CommandBase {
+    
+    private DigitalInput armapultLimit = new DigitalInput(RobotMap.armapultLimitChannel);
     
     public ArmapultBack() {
         // Use requires() here to declare subsystem dependencies
@@ -24,6 +29,9 @@ public class ArmapultBack extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        if (!armapultLimit.get()) {
+            armapult.Prepare(oi.getArmapultSpeed());
+        }
     }
 
     // Make this return true when this Command no longer needs to run execute()

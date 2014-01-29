@@ -111,7 +111,7 @@ public class OI {
     public double getRightSpeed() {
         return (jRight.getY());
     }
-    public double getDumperSpeed() {
+    public double getArmapultSpeed() {
         return (jThree.getY());
     }
     

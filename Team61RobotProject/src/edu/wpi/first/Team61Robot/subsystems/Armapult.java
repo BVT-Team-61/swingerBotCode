@@ -6,6 +6,7 @@
 package edu.wpi.first.Team61Robot.subsystems;
 
 import edu.wpi.first.Team61Robot.RobotMap;
+import edu.wpi.first.Team61Robot.commands.ArmapultDoNothing;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.Victor;
@@ -28,6 +29,7 @@ public class Armapult extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new ArmapultDoNothing());
     }
     
     public void Prepare(double pos) {

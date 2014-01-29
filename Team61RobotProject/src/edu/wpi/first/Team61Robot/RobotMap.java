@@ -31,6 +31,7 @@ public class RobotMap {
             
     // Digital inputs
     public static final int bottomLimitChannel = 3;
+    public static final int armapultLimitChannel = 4;
     
 
     public static final int compressorSensor = 1;    
